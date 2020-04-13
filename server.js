@@ -7,6 +7,7 @@ const colors = require('colors');
 const items = require('./routes/api/items');
 
 const app = express();
+const PORT = process.env.PORT || 5000;
 
 // Body-Parser middleware
 app.use(bodyParser.json());
@@ -33,5 +34,5 @@ if (process.env.NODE_ENV === 'production') {
     });
   }
 
-const PORT = process.env.PORT || 5000;
+
 app.listen(PORT, () => console.log(`[server.js]: running on PORT ${PORT}`.yellow));

@@ -9,10 +9,10 @@ const items = require('./routes/api/items');
 
 const app = express();
 const PORT = process.env.PORT || 5000;
-app.use(cors());
 
 // Body-Parser middleware
 app.use(bodyParser.json());
+app.use(cors());
 
 // DB Config
 const db = require('./config/Keys').MongoURI;

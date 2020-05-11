@@ -1,0 +1,4 @@
+{
+    "jwtSecret": "YOUCANPUTANYTHINGYOUWANTHERE",
+    "MongoURI": "mongodb+srv://norrico31:norrico31@mongoose-express-lhkys.mongodb.net/expense-tracker?retryWrites=true&w=majority"
+}

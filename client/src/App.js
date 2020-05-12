@@ -8,10 +8,14 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import ItemModal from './components/ItemModal';
-
 import AppNavbar from './components/AppNavbar';
 
+import { loadUser } from './actions/auth';
+
 class App extends Component {
+  componentDidMount() {
+    store.dispatch(loadUser());
+  }
   render() {
     return (
         <Provider store={store}>
